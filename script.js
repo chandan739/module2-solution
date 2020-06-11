@@ -1,11 +1,6 @@
-(function() {
-    var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
-    for (var i = 0; i < names.length; i++) {
-        var firstLetter = names[i].charAt(0).toLowerCase();
-        if (firstLetter === 'j') {
-            byeSpeaker.speak(names[i]);
-        } else {
-            helloSpeaker.speak(names[i]);
-        }
-    }
-})();
+function sayHello() {
+        var hi = document.getElementById('name').value;
+        var message = "<h2>"+ hi +"<h2>";
+       // document.getElementById('content').textContent = message;
+       document.getElementById('content').innerHTML = message;
+}
